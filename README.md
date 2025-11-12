@@ -6,11 +6,12 @@ BookmarkStyler to lekka aplikacja desktopowa (Electron) ułatwiająca projektowa
 
 - dodawanie elementów (folder, podfolder, zakładka) z gotowymi presetami,
 - „scena” z podglądem wyglądu przypominającym figmowy canvas,
-- panel właściwości z możliwością modyfikacji kolorów, cieni, promienia narożników, paddingów i dodatkowego CSS,
-- szybkie przyciski kształtów (kwadrat, zaokrąglony, kółko) manipulujące promieniem narożników,
+- panel właściwości z suwakami dla paddingów, promieni, grubości obramowania i fontu oraz z wygodnym kreatorem cieni,
+- szybkie kształty dodające dekoracyjne warstwy tła (okrąg, pasek, poświata) z możliwością dalszej edycji,
+- możliwość tworzenia i zarządzania dodatkowymi warstwami tła bezpośrednio w panelu właściwości,
 - edytowalne tokeny bazowe (kolory, padding, promienie) wraz z odpowiednikami dla trybu ciemnego,
 - generator kodu CSS z komentarzami pozwalającymi na późniejszy import,
-- import istniejących styli wygenerowanych przez BookmarkStyler (tokeny + elementy),
+- import istniejących styli wygenerowanych przez BookmarkStyler (tokeny + elementy), a także podstawowych reguł pisanych ręcznie,
 - kopiowanie CSS jednym kliknięciem.
 
 ## Wymagania
