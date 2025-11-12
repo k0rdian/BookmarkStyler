@@ -1,0 +1,21 @@
+{
+  "name": "bookmarkstyler",
+  "version": "0.1.0",
+  "description": "Desktop app for designing Firefox bookmark folder styles with live CSS output.",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:prod": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "firefox",
+    "css",
+    "bookmarks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}
