@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BookmarkStyler</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar sidebar--left">
+        <header class="sidebar__header">
+          <h1>BookmarkStyler</h1>
+          <p>Projektowanie styli userChrome dla zakładek Firefoksa.</p>
+        </header>
+        <section class="sidebar__section">
+          <h2>Nowy element</h2>
+          <button class="btn btn--primary" data-action="add" data-type="folder">Dodaj folder</button>
+          <button class="btn" data-action="add" data-type="subfolder">Dodaj podfolder</button>
+          <button class="btn" data-action="add" data-type="bookmark">Dodaj zakładkę</button>
+        </section>
+        <section class="sidebar__section">
+          <h2>Dodaj dekorację</h2>
+          <div class="shape-preview">
+            <button class="shape-button" data-shape="circle">Okrąg</button>
+            <button class="shape-button" data-shape="stripe">Pasek</button>
+            <button class="shape-button" data-shape="glow">Poświata</button>
+          </div>
+          <p class="sidebar__hint">Zaznacz element, dodaj warstwę tła i dopracuj ją w panelu właściwości.</p>
+        </section>
+        <section class="sidebar__section sidebar__section--tokens">
+          <h2>Tokeny bazowe</h2>
+          <div class="token-grid" id="tokenGrid"></div>
+          <details>
+            <summary>Ustawienia trybu ciemnego</summary>
+            <div class="token-grid" id="darkTokenGrid"></div>
+          </details>
+        </section>
+      </aside>
+      <main class="canvas">
+        <header class="canvas__header">
+          <h2>Scena</h2>
+          <div class="canvas__actions">
+            <button class="btn" id="duplicateBtn">Duplikuj</button>
+            <button class="btn" id="deleteBtn">Usuń</button>
+          </div>
+        </header>
+        <section class="canvas__board" id="canvasBoard"></section>
+      </main>
+      <aside class="sidebar sidebar--right">
+        <header class="sidebar__header">
+          <h2>Właściwości</h2>
+          <p id="selectionInfo">Brak zaznaczenia.</p>
+        </header>
+        <form id="propertyForm" class="property-form hidden"></form>
+        <section class="sidebar__section">
+          <h2>Eksport CSS</h2>
+          <div class="export-actions">
+            <button class="btn btn--primary" id="copyCssBtn">Kopiuj CSS</button>
+            <button class="btn" id="refreshCssBtn">Odśwież</button>
+          </div>
+          <textarea id="cssOutput" readonly spellcheck="false"></textarea>
+          <details class="import-panel">
+            <summary>Wklej istniejący kod</summary>
+            <textarea id="cssImport" placeholder="Wklej kod wygenerowany przez BookmarkStyler"></textarea>
+            <button class="btn" id="importBtn">Zaimportuj</button>
+          </details>
+        </section>
+      </aside>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
